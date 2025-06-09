@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "concurrently": "^9.1.2",
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client-install": "npm install --prefix client", 
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm --prefix frontend start",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+
+  },
+  "name": "my-app",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
